@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kajal | Student Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Kajal.dev</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" type="button">🌙 Dark Mode</button>
+    </nav>
+
+    <header id="home" class="hero">
+        <h1>Hi, I'm Kajal Kumari!</h1>
+        <p>A Computer Science Student & Web Developer</p>
+        <a href="#about" class="btn">Know More About Me</a>
+    </header>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I am a Computer Science and Engineering student passionate about technology and web development.</p>
+        <p>I enjoy learning Java, solving DSA problems, and building projects that solve real-world problems. I am currently improving my development skills through my ApnoAI internship.</p>
+    </section>
+
+    <section id="services" class="container alt-bg">
+        <h2>My Skills & Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Building websites using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="service-card">
+                <h3>Java & DSA</h3>
+                <p>Practicing data structures, algorithms, and problem-solving.</p>
+            </div>
+            <div class="service-card">
+                <h3>Responsive Design</h3>
+                <p>Creating user-friendly websites for mobile and desktop screens.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>Email: kajal@gmail.com</p>
+        <p>Let's connect and build something amazing!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Kajal Kumari. Built for ApnoAI Internship Task 1.</p>
+    </footer>
+    <script>
+    const themeToggle = document.getElementById("themeToggle");
+
+    themeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            themeToggle.textContent = "☀️ Light Mode";
+        } else {
+            themeToggle.textContent = "🌙 Dark Mode";
+        }
+    });
+    </script>
+
+</body>
+</html>
